@@ -1,5 +1,5 @@
 {
-  "name": "vue-pure-admin",
+  "name": "word-book-ui",
   "version": "6.1.0",
   "private": true,
   "type": "module",
@@ -42,9 +42,9 @@
   },
   "license": "MIT",
   "author": {
-    "name": "xiaoxian521",
-    "email": "pureadmin@163.com",
-    "url": "https://github.com/xiaoxian521"
+    "name": "Yue Li",
+    "email": "info@lulolo.com",
+    "url": "https://github.com/YueLiRex"
   },
   "dependencies": {
     "@amap/amap-jsapi-loader": "^1.0.1",

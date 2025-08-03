@@ -1,11 +1,11 @@
 {
   "Version": "6.1.0",
-  "Title": "PureAdmin",
+  "Title": "Word Book",
   "FixedHeader": true,
   "HiddenSideBar": false,
   "MultiTagsCache": false,
   "KeepAlive": true,
-  "Locale": "zh",
+  "Locale": "en",
   "Layout": "vertical",
   "Theme": "light",
   "DarkMode": false,

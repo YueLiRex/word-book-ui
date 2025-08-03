@@ -36,25 +36,25 @@ const userInfo = ref({
 const panes = [
   {
     key: "profile",
-    label: "个人信息",
+    label: "Profile",
     icon: ProfileIcon,
     component: Profile
   },
-  {
-    key: "preferences",
-    label: "偏好设置",
-    icon: PreferencesIcon,
-    component: Preferences
-  },
-  {
-    key: "securityLog",
-    label: "安全日志",
-    icon: SecurityLogIcon,
-    component: SecurityLog
-  },
+  // {
+  //   key: "preferences",
+  //   label: "偏好设置",
+  //   icon: PreferencesIcon,
+  //   component: Preferences
+  // },
+  // {
+  //   key: "securityLog",
+  //   label: "安全日志",
+  //   icon: SecurityLogIcon,
+  //   component: SecurityLog
+  // },
   {
     key: "accountManagement",
-    label: "账户管理",
+    label: "Account Management",
     icon: AccountManagementIcon,
     component: AccountManagement
   }
@@ -82,7 +82,7 @@ getMine().then(res => {
             class="h-full flex items-center px-[var(--el-menu-base-level-padding)]"
           >
             <IconifyIconOffline :icon="leftLine" />
-            <span class="ml-2">返回</span>
+            <span class="ml-2">Back</span>
           </div>
         </div>
         <div class="flex items-center ml-8 mt-4 mb-4">
@@ -92,7 +92,7 @@ getMine().then(res => {
               {{ userInfo.nickname }}
             </ReText>
             <ReText class="self-baseline!" type="info">
-              {{ userInfo.username }}
+              {{ userInfo.email }}
             </ReText>
           </div>
         </div>

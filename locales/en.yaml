@@ -200,10 +200,10 @@ login:
   pureUsername: Username
   purePassword: Password
   pureVerifyCode: VerifyCode
-  pureRemember: days no need to login
+  pureRemember: Days remember me
   pureRememberInfo: After checking and logging in, will automatically log in to the system without entering your username and password within the specified number of days.
   pureSure: Sure Password
-  pureForget: Forget Password?
+  pureForget: Forget Password
   pureLogin: Login
   pureThirdLogin: Third Login
   purePhoneLogin: Phone Login

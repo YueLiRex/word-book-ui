@@ -110,14 +110,14 @@ getMine().then(res => {
       deviceDetection() ? 'max-w-[100%]' : 'max-w-[70%]'
     ]"
   >
-    <h3 class="my-8!">个人信息</h3>
+    <h3 class="my-8!">Profile</h3>
     <el-form
       ref="userInfoFormRef"
       label-position="top"
       :rules="rules"
       :model="userInfos"
     >
-      <el-form-item label="头像">
+      <el-form-item label="Avatar">
         <el-avatar :size="80" :src="userInfos.avatar" />
         <el-upload
           ref="uploadRef"
@@ -130,34 +130,34 @@ getMine().then(res => {
         >
           <el-button plain class="ml-4!">
             <IconifyIconOffline :icon="uploadLine" />
-            <span class="ml-2">更新头像</span>
+            <span class="ml-2">Update</span>
           </el-button>
         </el-upload>
       </el-form-item>
-      <el-form-item label="昵称" prop="nickname">
+      <el-form-item label="Nick name" prop="nickname">
         <el-input v-model="userInfos.nickname" placeholder="请输入昵称" />
       </el-form-item>
-      <el-form-item label="邮箱" prop="email">
+      <el-form-item label="Email" prop="email">
         <el-autocomplete
           v-model="userInfos.email"
           :fetch-suggestions="queryEmail"
           :trigger-on-focus="false"
-          placeholder="请输入邮箱"
+          placeholder="email"
           clearable
           class="w-full"
         />
       </el-form-item>
-      <el-form-item label="联系电话">
+      <el-form-item label="Telephone number">
         <el-input
           v-model="userInfos.phone"
-          placeholder="请输入联系电话"
+          placeholder="telephone number"
           clearable
         />
       </el-form-item>
-      <el-form-item label="简介">
+      <el-form-item label="Introduction">
         <el-input
           v-model="userInfos.description"
-          placeholder="请输入简介"
+          placeholder="Introduction"
           type="textarea"
           :autosize="{ minRows: 6, maxRows: 8 }"
           maxlength="56"
@@ -165,7 +165,7 @@ getMine().then(res => {
         />
       </el-form-item>
       <el-button type="primary" @click="onSubmit(userInfoFormRef)">
-        更新信息
+        Update Profile
       </el-button>
     </el-form>
     <el-dialog

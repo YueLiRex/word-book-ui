@@ -1,21 +1,21 @@
 import { chatai } from "@/router/enums";
 
 export default {
-  path: "/chatai",
+  path: "/words",
   redirect: "/chatai/index",
   meta: {
-    icon: "ri/chat-search-line",
-    title: "chat-ai",
+    icon: "streamline-freehand:notes-book",
+    title: "Word Book",
     rank: chatai
   },
   children: [
     {
       path: "/chatai/index",
-      name: "ChatAi",
-      component: () => import("@/views/chatai/index.vue"),
+      name: "wordbook",
+      component: () => import("@/views/word-book/index.vue"),
       meta: {
-        title: "chat-ai",
-        extraIcon: "IF-pure-iconfont-new svg"
+        title: "Word Book"
+        // extraIcon: "IF-pure-iconfont-new svg"
       }
     }
   ]

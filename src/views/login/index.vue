@@ -219,6 +219,7 @@ watch(loginDay, value => {
               </el-form-item>
             </Motion>
 
+            <!--
             <Motion :delay="200">
               <el-form-item prop="verifyCode">
                 <el-input
@@ -233,9 +234,11 @@ watch(loginDay, value => {
                 </el-input>
               </el-form-item>
             </Motion>
+            -->
 
             <Motion :delay="250">
               <el-form-item>
+                <!--
                 <div class="w-full h-[20px] flex justify-between items-center">
                   <el-checkbox v-model="checked">
                     <span class="flex">
@@ -251,7 +254,7 @@ watch(loginDay, value => {
                       >
                         <option value="1">1</option>
                         <option value="7">7</option>
-                        <option value="30">30</option>
+                        <option value="30" selected>30</option>
                       </select>
                       {{ t("login.pureRemember") }}
                       <IconifyIconOffline
@@ -272,6 +275,7 @@ watch(loginDay, value => {
                     {{ t("login.pureForget") }}
                   </el-button>
                 </div>
+                -->
                 <el-button
                   class="w-full mt-4!"
                   size="default"
@@ -302,6 +306,7 @@ watch(loginDay, value => {
             </Motion>
           </el-form>
 
+          <!--
           <Motion v-if="currentPage === 0" :delay="350">
             <el-form-item>
               <el-divider>
@@ -324,17 +329,20 @@ watch(loginDay, value => {
               </div>
             </el-form-item>
           </Motion>
+          -->
+
           <!-- 手机号登录 -->
-          <LoginPhone v-if="currentPage === 1" />
+          <!--<LoginPhone v-if="currentPage === 1" />-->
           <!-- 二维码登录 -->
-          <LoginQrCode v-if="currentPage === 2" />
+          <!--<LoginQrCode v-if="currentPage === 2" />-->
           <!-- 注册 -->
-          <LoginRegist v-if="currentPage === 3" />
+          <LoginRegist v-if="currentPage === 2" />
           <!-- 忘记密码 -->
-          <LoginUpdate v-if="currentPage === 4" />
+          <LoginUpdate v-if="currentPage === 1" />
         </div>
       </div>
     </div>
+    <!--
     <div
       class="w-full flex-c absolute bottom-3 text-sm text-[rgba(0,0,0,0.6)] dark:text-[rgba(220,220,242,0.8)]"
     >
@@ -347,6 +355,7 @@ watch(loginDay, value => {
         &nbsp;{{ title }}
       </a>
     </div>
+    -->
   </div>
 </template>
 

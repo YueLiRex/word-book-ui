@@ -9,24 +9,25 @@ defineOptions({
 
 const list = ref([
   {
-    title: "账户密码",
+    title: "Password",
     illustrate: "当前密码强度：强",
-    button: "修改"
+    button: "Change"
+  },
+  // {
+  //   title: "密保手机",
+  //   illustrate: "已经绑定手机：158****6789",
+  //   button: "修改"
+  // },
+  {
+    title: "Password Question",
+    illustrate:
+      "No security questions have been set. Security questions can effectively protect account security.",
+    button: "Change"
   },
   {
-    title: "密保手机",
-    illustrate: "已经绑定手机：158****6789",
-    button: "修改"
-  },
-  {
-    title: "密保问题",
-    illustrate: "未设置密保问题，密保问题可有效保护账户安全",
-    button: "修改"
-  },
-  {
-    title: "备用邮箱",
-    illustrate: "已绑定邮箱：pure***@163.com",
-    button: "修改"
+    title: "Second email",
+    illustrate: "Improve account security by adding a second email address.",
+    button: "Change"
   }
 ]);
 
