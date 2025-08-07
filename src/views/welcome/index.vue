@@ -2,12 +2,12 @@
 import { ref, markRaw } from "vue";
 import ReCol from "@/components/ReCol";
 import { useDark, randomGradient } from "./utils";
-import WelcomeTable from "./components/table/index.vue";
+// import WelcomeTable from "./components/table/index.vue";
 import { ReNormalCountTo } from "@/components/ReCountTo";
-import { useRenderFlicker } from "@/components/ReFlicker";
-import { ChartBar, ChartLine, ChartRound } from "./components/charts";
+// import { useRenderFlicker } from "@/components/ReFlicker";
+// import { ChartBar, ChartLine, ChartRound } from "./components/charts";
 import Segmented, { type OptionsType } from "@/components/ReSegmented";
-import { chartData, barChartData, progressData, latestNewsData } from "./data";
+// import { chartData, barChartData, progressData, latestNewsData } from "./data";
 
 defineOptions({
   name: "Welcome"
@@ -93,7 +93,7 @@ const optionsBasis: Array<OptionsType> = [
       <re-col
         v-motion
         class="mb-[18px]"
-        :value="18"
+        :value="24"
         :xs="24"
         :initial="{
           opacity: 0,
@@ -109,7 +109,7 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card class="bar-card" shadow="never">
           <div class="flex justify-between">
-            <span class="text-md font-medium">分析概览</span>
+            <span class="text-md font-medium">Progress</span>
             <Segmented v-model="curWeek" :options="optionsBasis" />
           </div>
           <div class="flex justify-between items-start mt-3">
@@ -121,7 +121,7 @@ const optionsBasis: Array<OptionsType> = [
         </el-card>
       </re-col>
 
-      <re-col
+      <!-- <re-col
         v-motion
         class="mb-[18px]"
         :value="6"
@@ -166,12 +166,12 @@ const optionsBasis: Array<OptionsType> = [
             </span>
           </div>
         </el-card>
-      </re-col>
+      </re-col> -->
 
-      <re-col
+      <!-- <re-col
         v-motion
         class="mb-[18px]"
-        :value="18"
+        :value="24"
         :xs="24"
         :initial="{
           opacity: 0,
@@ -191,9 +191,9 @@ const optionsBasis: Array<OptionsType> = [
           </div>
           <WelcomeTable class="mt-3" />
         </el-card>
-      </re-col>
+      </re-col> -->
 
-      <re-col
+      <!-- <re-col
         v-motion
         class="mb-[18px]"
         :value="6"
@@ -241,7 +241,7 @@ const optionsBasis: Array<OptionsType> = [
             </el-timeline>
           </el-scrollbar>
         </el-card>
-      </re-col>
+      </re-col> -->
     </el-row>
   </div>
 </template>

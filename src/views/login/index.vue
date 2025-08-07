@@ -70,7 +70,7 @@ const onLogin = async (formEl: FormInstance | undefined) => {
       loading.value = true;
       useUserStoreHook()
         .loginByUsername({
-          username: ruleForm.username,
+          email: ruleForm.username,
           password: ruleForm.password
         })
         .then(res => {
@@ -125,15 +125,15 @@ watch(loginDay, value => {
     <img :src="bg" class="wave" />
     <div class="flex-c absolute right-5 top-3">
       <!-- 主题 -->
-      <el-switch
+      <!-- <el-switch
         v-model="dataTheme"
         inline-prompt
         :active-icon="dayIcon"
         :inactive-icon="darkIcon"
         @change="dataThemeChange"
-      />
+      /> -->
       <!-- 国际化 -->
-      <el-dropdown trigger="click">
+      <!-- <el-dropdown trigger="click">
         <globalization
           class="hover:text-primary hover:bg-[transparent]! w-[20px] h-[20px] ml-1.5 cursor-pointer outline-hidden duration-300"
         />
@@ -163,7 +163,7 @@ watch(loginDay, value => {
             </el-dropdown-item>
           </el-dropdown-menu>
         </template>
-      </el-dropdown>
+      </el-dropdown> -->
     </div>
     <div class="login-container">
       <div class="img">
